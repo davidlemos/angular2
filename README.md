@@ -1,7 +1,7 @@
 # angular2-blankproject
 
-#Dependencias
+#Install packages
 npm install
 
-#Executando a app
+#Execute app
 npm start
