@@ -8,17 +8,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "Blank Project";
+var AppRouterModule = (function () {
+    function AppRouterModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'app-home',
-            templateUrl: 'app/views/home.html'
-        }), 
+    AppRouterModule = __decorate([
+        core_1.NgModule({}), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AppRouterModule);
+    return AppRouterModule;
 }());
-exports.AppComponent = AppComponent;
+exports.AppRouterModule = AppRouterModule;

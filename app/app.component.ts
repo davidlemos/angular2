@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app',
+  selector: 'app-home',
   templateUrl: 'app/views/home.html'
 })
 
 export class AppComponent {
-    nome:string;
+    title:string;
 
     constructor(){
-        this.nome = 'Blank Project';
+        this.title = "Blank Project"
     }
 }
