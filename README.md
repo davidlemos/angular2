@@ -1,7 +1,8 @@
-# angular2-blankproject
+# Ionic 2
 
-#Dependencias
+#Dependências
 npm install
 
-#Executando a app
-npm start
+#Executando no navegador
+ionic run browser
+
