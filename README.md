@@ -4,4 +4,4 @@
 npm install
 
 #Executando a app
-npm start
+ionic run browser
