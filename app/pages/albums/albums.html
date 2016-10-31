@@ -1,0 +1,29 @@
+<ion-content >
+	<ion-list class="Container50">
+		    <ion-item *ngFor="let album of albumList">
+                <div class="Container33 TextList">{{album.id}}</div>
+			    <div class="Container33 TextList">{{album.title}}</div>
+                <div class="Container33 TextList">
+                    <button (click)="viewAlbum(album)">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+                </div>
+		    </ion-item>
+	</ion-list>
+    <ion-card class="AlbumData" *ngIf="mostrarDetalhes">
+                <ion-item>
+                    <ion-label>Título:</ion-label>
+                    <ion-label>{{selectedAlbum.title}}</ion-label>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Id:</ion-label>
+                    <ion-label>{{selectedAlbum.id}}</ion-label>
+                </ion-item>
+            
+                <ion-item>
+                        <ion-label>User id:</ion-label>
+                    <ion-label>{{selectedAlbum.userId}}</ion-label>
+                </ion-item>
+        </ion-card> 
+</ion-content>

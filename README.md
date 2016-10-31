@@ -1,4 +1,4 @@
-# angular2-blankproject
+# Exemplo Album
 
 #Dependencias
 npm install

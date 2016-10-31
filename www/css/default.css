@@ -1,0 +1,57 @@
+/* Containers */
+.Container100{ width:100%; float:left;}
+.Container96{ width:96%; float:left;}
+.Container90{ width:90%; float:left;}
+.Container85{ width:85%; float:left;}
+.Container80{ width:80%; float:left;}
+.Container75{ width:75%; float:left;}
+.Container70{ width:70%; float:left;}
+.Container60{ width:60%; float:left;}
+.Container50{ width:50%; float:left;}
+.Container40{ width:40%; float:left;}
+.Container33{ width:33.3%; float:left;}
+.Container30{ width:30%; float:left;}
+.Container25{ width:25%; float:left;}
+.Container20{ width:20%; float:left;}
+.Container15{ width:15%; float:left;}
+.Container10{ width:10%; float:left;}
+.Container5{ width:5%; float:left;}
+
+.Centered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.TexAlCenter {
+    text-align: center;
+}
+.Logo{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    background: transparent !important;
+    border: 0 !important;
+}
+.Logo:hover:not(.disable-hover) {
+    background: transparent;
+}
+.Logo ion-button-effect {
+    background-color: transparent !important;
+}
+.CardLogo{
+    height: 30%;
+}
+.TextList{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 0.5em;
+    margin-top: 0.8em;
+}
+.AlbumData{
+    float: right;
+    width: 40%;
+}
