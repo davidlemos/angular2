@@ -4,4 +4,4 @@
 npm install
 
 #Executando a app
-npm start
+ng serve --open

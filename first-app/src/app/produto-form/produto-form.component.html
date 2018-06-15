@@ -1,0 +1,33 @@
+<div>
+  {{msg}}
+  <form (ngSubmit)="onSubmit()" #prodForm="ngForm">
+    <label for="nome">Nome</label>
+    <input autocomplete="off" type="text" 
+            required 
+            [(ngModel)]="produto.nome" 
+            name="nome"
+            id="nome" #nome="ngModel"
+    >
+    <span [hidden]="nome.valid || nome.pristine">
+      Este campo é required
+    </span>
+    
+    <br><br>
+    
+    <label for="detalhes">Detalhes</label>
+    <input type="text" [(ngModel)]="produto.detalhes" name="detalhes" id="detalhes">
+    
+    <br><br>
+    
+    <button type="submit">Salvar</button>
+    <button title="button">Limpar</button>
+  </form>
+</div>
+<br><br>
+<!--Lista de Produtos-->
+<!-- 
+  Enviando os produtos adicionados no componente pai
+  via input decorator [produtos] para ser exibidos
+  no component filho <app-produtos> 
+-->
+<app-produtos [produtos]="produtos"></app-produtos>
