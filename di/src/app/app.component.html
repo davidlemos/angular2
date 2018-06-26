@@ -1,0 +1,9 @@
+{{title}}
+<button (click)="getPosts()">Get Posts</button>
+<hr>
+<div *ngFor="let post of posts">
+    <p>ID: {{post.id}}</p>
+    <p>UserId: {{post.userId}}</p>
+    <p>Title: {{post.title}}</p>
+    <p>Body: {{post.body}}</p>
+</div>
