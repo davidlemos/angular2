@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My photos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="takePicture()">Tire uma foto</button>
+<div *ngIf="captureDataUrl"style="display:flex;flex-direction: column;justify-content:center">
+    <img [src]="captureDataUrl">
+</div>
+</ion-content>
